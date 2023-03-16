@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+}
+
+/*GENERAL STYLING*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #efedeb;
+}
+
+.container > div {
+    padding: 8px 16px 8px 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img:not(.logo) {
+    border-radius: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 9.25vw;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p,
+li,
+a,
+button {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 1.15em;
+}
+
+p,
+li,
+button {
+    color: #16161d;
+}
+
+a {
+    color: steelblue;
+}
+
+a:hover {
+    color: mediumseagreen;
+    transition: 0.3s;
+}
+
+/* HEADER */
+
+.container {
+    width: 100%;
+}
+
+#header {
+    background-color: #16161d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#group-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav div {
+    width: 50%;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+#nav a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#nav div:hover {
+    background-color: mediumseagreen;
+    transition: all 0.5s ease;
+}
+
+#nav p {
+    color: white;
+    text-align: center;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .container > div {
+        padding: 24px 18px 24px 18px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #16161d;
+    }
+
+    h2 {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    #header {
+        background-color: #efedeb;
+    }
+
+    #group-title {
+        height: 5vh;
+        justify-content: flex-start;
+        width: 55%;
+    }
+
+    p,
+    li,
+    a,
+    button {
+        font-size: 1.5em;
+    }
+
+    #nav {
+        width: 45%;
+        justify-content: flex-end;
+    }
+
+    #nav div {
+        width: 30%;
+        border: 2px solid #16161d;
+    }
+
+    #nav p {
+        font-size: 0.8em;
+        color: #16161d;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .container > div {
+        padding: 28px 28px 28px 28px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    #group-title {
+        width: 50%;
+    }
+
+    #nav {
+        width: 50%;
+    }
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1400px) {
+    .container > div {
+        padding: 28px 180px 28px 180px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    #nav div {
+        width: 20%;
+    }
+}
+
+/* BLURB */
+
+#blurb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#blurb p {
+    font-size: 1.5em;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    #blurb {
+        padding-left: 33vw;
+        padding-right: 33vw;
+        padding-top: 64px;
+        padding-bottom: 84px;
+    }
+
+    #blurb p {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #blurb {
+        padding-left: 25vw;
+        padding-right: 25vw;
+        padding-top: 64px;
+        padding-bottom: 84px;
+    }
+
+    #blurb p {
+        font-size: 2em;
+    }
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1400px) {
+    #blurb {
+        padding-left: 33vw;
+        padding-right: 17vw;
+    }
+
+    #blurb p {
+        font-size: 3.5em;
+    }
+}
+
+/* DIVIDER */
+
+.divider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-size: 2em;
+}
+
+/* MEETUP */
+
+#meetup {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: baseline;
+    grid-gap: 12px;
+    padding-bottom: 48px;
+}
+
+#meetup h2 {
+    width: 100%;
+    grid-column: 1 / span 2;
+}
+
+.meetup-date {
+    justify-self: flex-end;
+    padding: 10px;
+    background-color: mediumaquamarine;
+    border-radius: 50px;
+}
+
+#meetup p {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: bold;
+}
+
+button {
+    border: 6px solid #16161d;
+    background-color: none;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 50px;
+    transition: 0.4s;
+}
+
+button:hover {
+    border: 6px solid mediumseagreen;
+    color: mediumseagreen;
+    background-color: #16161d;
+    cursor: grab;
+}
+
+.fa-arrow-right {
+    transform: rotate(-45deg);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    #meetup {
+        grid-gap: 32px;
+        padding-bottom: 64px;
+    }
+
+    .meetup-date {
+        padding: 10px;
+        border-radius: 50px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    #meetup {
+        padding-left: 33vw;
+    }
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1400px) {
+    #meetup {
+        grid-template-columns: 1fr 9fr;
+        padding-left: 33vw;
+    }
+
+    .meetup-date {
+        justify-self: flex-start;
+    }
+}
+
+/* HERO */
+
+#hero-section {
+    height: 42.5vh;
+    overflow: hidden;
+}
+
+.marquee-img img {
+    border-radius: 30px;
+    /*    animation: marquee 18s linear infinite;*/
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    #hero-section {
+        height: 60vh;
+    }
+}
+
+/* FOOTER */
+
+#connect {
+    height: 12.5vh;
+}
+
+#connect p,
+#connect a {
+    font-size: 1em;
+}
+
+#connect {
+    border-top: 3px solid #16161d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#slack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-gap: 20px;
+}
+
+#slack-icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#affiliates {
+    display: none;
+    flex: 1 0px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    #connect {
+        height: 10vh;
+    }
+
+    #connect p,
+    #connect a {
+        font-size: 1em;
+    }
+
+    #slack,
+    #affiliates {
+        width: 50%;
+    }
+
+    #slack-icon {
+        width: 10vw;
+    }
+
+    #affiliates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        grid-gap: 20px;
+    }
+
+    #affiliates img {
+        max-width: 70%;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    #slack {
+        align-items: center;
+        justify-content: flex-start;
+        width: 33%;
+    }
+
+    #slack-icon {
+        width: 5vw;
+    }
+
+    #affiliates {
+        justify-content: flex-end;
+        grid-gap: 20px;
+        width: 66%;
+    }
+
+    #affiliates img {
+        width: 30%;
+        max-width: 50%;
+    }
+}
