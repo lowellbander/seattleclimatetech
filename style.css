@@ -276,7 +276,7 @@ a:hover {
 
 #meetup {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: fit-content(200px) 2fr;
     grid-template-rows: auto;
     justify-content: space-around;
     align-items: baseline;
@@ -327,11 +327,13 @@ button:hover {
     #meetup {
         grid-gap: 32px;
         padding-bottom: 64px;
+        grid-template-columns: fit-content(200px) 4fr;
     }
 
     .meetup-date {
         padding: 10px;
         border-radius: 50px;
+        margin-left: 32px;
     }
 }
 
@@ -346,11 +348,6 @@ button:hover {
 /* LARGE DESKTOP */
 
 @media screen and (min-width: 1400px) {
-    #meetup {
-        grid-template-columns: 1fr 9fr;
-        padding-left: 33vw;
-    }
-
     .meetup-date {
         justify-self: flex-start;
     }
