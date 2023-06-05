@@ -5,8 +5,14 @@
     <title>Seattle Climate Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Seattle Climate Tech" />
-    <meta property="og:description" content="Working in climate? Looking to make the switch? Let's meet up!" />
-    <meta property="og:image" content="https://seattleclimate.tech/img/meetup-1.jpg" />
+    <meta
+      property="og:description"
+      content="Working in climate? Looking to make the switch? Let's meet up!"
+    />
+    <meta
+      property="og:image"
+      content="https://seattleclimate.tech/img/meetup-1.jpg"
+    />
     <meta property="og:url" content="https://seattleclimate.tech/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Seattle Climate Tech" />
@@ -32,33 +38,35 @@
       const meetups = [
         {
           date: "06/08",
-          location: "Climate Design Social @ Indigo Slate Gallery (Pioneer Square)",
-          link: "https://www.eventbrite.com/e/climate-design-social-tickets-630476300587/"
+          location:
+            "Climate Design Social @ Indigo Slate Gallery (Pioneer Square)",
+          link: "https://www.eventbrite.com/e/climate-design-social-tickets-630476300587/",
         },
         {
           date: "06/14",
           location: "Women in Climate Picnic @ Woodland Park",
-          link: "https://lu.ma/seattle.climate.tech/"
+          link: "https://lu.ma/seattle.climate.tech/",
         },
         {
           date: "06/22",
-          location: "2023 CleanTech Innovation Showcase @ Hyatt at Olive 8 (Downtown)",
-          link: "https://www.cleantechalliance.org/2023-cleantech-innovation-showcase/"
+          location:
+            "2023 CleanTech Innovation Showcase @ Hyatt at Olive 8 (Downtown)",
+          link: "https://www.cleantechalliance.org/2023-cleantech-innovation-showcase/",
         },
         {
           date: "06/24",
           location: "Climate Tech Coffee Crawl @ Capitol Hill",
-          link: "https://www.climatetechhandbook.com/coffee-crawl/"
+          link: "https://www.climatetechhandbook.com/coffee-crawl/",
         },
         {
           date: "06/28",
           location: "Canary Live Seattle @ KEXP (LQA)",
-          link: "https://www.eventbrite.com/e/canary-live-seattle-tickets-616481582007/"
+          link: "https://www.eventbrite.com/e/canary-live-seattle-tickets-616481582007/",
         },
       ];
       for (let i = 0; i < meetups.length; i++)
-        meetups[i].link += '?utm_source=seattleclimatetech'
-      window.addEventListener('load', ()=> {
+        meetups[i].link += "?utm_source=seattleclimatetech";
+      window.addEventListener("load", () => {
         const meetupsContainer = document.getElementById("meetup");
 
         meetups.forEach((meetup) => {
@@ -77,7 +85,7 @@
           meetupsContainer.appendChild(meetupDate);
           meetupsContainer.appendChild(meetupLocation);
         });
-      })
+      });
     </script>
     <!--    end icons   -->
     <link rel="stylesheet" href="style.css" />
