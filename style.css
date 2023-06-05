@@ -340,7 +340,7 @@ button:hover {
 
 @media screen and (min-width: 1024px) {
   #meetup {
-    padding-left: 33vw;
+    padding: 0vw 15vw;
   }
 }
 
