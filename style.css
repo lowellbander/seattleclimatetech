@@ -81,15 +81,23 @@ a:hover {
 }
 
 #nav {
-  width: 100%;
   display: flex;
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-1 {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.nav-2 {
+  flex-grow: 1;
 }
 
 #nav div {
-  width: 50%;
   border: 2px solid white;
   padding: 5px;
   border-radius: 25px;
@@ -150,7 +158,7 @@ a:hover {
   }
 
   #nav div {
-    width: 30%;
+    width: auto;
     border: 2px solid #16161d;
   }
 
@@ -181,6 +189,7 @@ a:hover {
 
   #nav {
     width: 50%;
+    flex-wrap: nowrap;
   }
 }
 
