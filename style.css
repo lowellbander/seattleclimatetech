@@ -283,7 +283,7 @@ a:hover {
 /* MEETUP */
 
 #meetup {
-  display: grid;
+  display: flex;
   grid-template-columns: fit-content(200px) 2fr;
   grid-template-rows: auto;
   justify-content: space-around;

@@ -34,37 +34,6 @@
       src="https://kit.fontawesome.com/9d25685941.js"
       crossorigin="anonymous"
     ></script>
-    <script defer>
-      const meetups = [
-        {
-          date: "07/19",
-          location: "Meet Up @ Made Cascade (Ballard)",
-          link: "https://lu.ma/seattle.climate.tech/",
-        },
-      ];
-      for (let i = 0; i < meetups.length; i++)
-        meetups[i].link += "?utm_source=seattleclimatetech";
-      window.addEventListener("load", () => {
-        const meetupsContainer = document.getElementById("meetup");
-
-        meetups.forEach((meetup) => {
-          const meetupDate = document.createElement("p");
-          meetupDate.className = "meetup-date";
-          meetupDate.textContent = meetup.date;
-
-          const meetupLocation = document.createElement("p");
-          meetupLocation.innerHTML = `
-          <a href="${meetup.link}" target="_blank">
-            ${meetup.location}
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        `;
-
-          meetupsContainer.appendChild(meetupDate);
-          meetupsContainer.appendChild(meetupLocation);
-        });
-      });
-    </script>
     <!--    end icons   -->
     <link rel="stylesheet" href="style.css" />
     <script>
@@ -119,7 +88,16 @@
         <p><i class="fa-solid fa-cloud"></i></p>
       </div>
       <div id="meetup">
-        <h2>Upcoming meetups</h2>
+        <iframe
+          src="https://lu.ma/embed/calendar/cal-bU2Fz8ukrr0CDfe/events"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 1px solid #bfcbda88; border-radius: 4px"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
       <div class="website-image">
         <img
